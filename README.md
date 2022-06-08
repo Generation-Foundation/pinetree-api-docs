@@ -68,7 +68,7 @@ Success 200
 }
 ```
 
-## Wallet | Internal token send
+## ~~Wallet | Internal token send~~
 
 `POST`
 ```
@@ -90,3 +90,166 @@ Success 200
     "message": "success"
 }
 ```
+
+## Project | create
+
+| Field | Type | Description |
+|-------|------|----------------|
+| projectName | string | English and number. No special symbol. |
+
+`POST`
+```
+https://api.pinetree.space/project/:projectName/create
+```
+
+Success 200
+```json
+{
+    "message": "success",
+    "project": "NFT Craft",
+    "owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
+    "gen-deposit": 0,
+    "nft-total": 0
+}
+```
+
+## Project | project
+
+`GET`
+```
+https://api.pinetree.space/project/:projectName
+```
+
+Success 200
+```json
+{
+    "project": "NFT Craft",
+    "project-owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
+    "gen-deposit": 0,
+    "nft-total": 0
+}
+```
+
+## NFT | mint
+
+| Field | Type | Description |
+|-------|------|----------------|
+| projectName | string | English and number. No special symbol. |
+| receiver | string | Receiver's Ethereum address |
+
+`POST`
+```
+https://api.pinetree.space/project/:projectName/nft/mint/receiver/:receiver
+```
+
+Request Json Body
+```json
+{
+    "data": [
+        {
+            "description": "This is an example #1",
+            "name": "NFT Example #1",
+            "attributes": [
+                {
+                    "trait_type": "color",
+                    "value": "red"
+                },
+                {
+                    "trait_type": "reveal",
+                    "value": "1654677698"
+                }
+            ],
+            "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+            "animation_url": "",
+            "background_color": "",
+            "youtube_url": "",
+            "external_url": ""
+        }
+    ]
+}
+```
+
+Success 200
+```json
+{
+    "message": "success",
+    "project": "NFT Craft",
+    "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "sequence": 467,
+    "last-price": {
+        "eth": 0,
+        "gen": 0
+    },
+    "state": "none",
+    "data": [
+        {
+            "description": "This is an example #1",
+            "name": "NFT Example #1",
+            "attributes": [
+                {
+                    "trait_type": "color",
+                    "value": "red"
+                },
+                {
+                    "trait_type": "reveal",
+                    "value": "1654677698"
+                }
+            ],
+            "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+            "animation_url": "",
+            "background_color": "",
+            "youtube_url": "",
+            "external_url": ""
+        }
+    ]
+}
+```
+
+## NFT | sequence
+
+| Field | Type | Description |
+|-------|------|----------------|
+| sequenceNum | number | NFT sequence number |
+
+`GET`
+```
+https://api.pinetree.space/project/:projectName/nft/sequence/:sequenceNum
+```
+
+Success 200
+```json
+{
+    "project": "NFT Craft",
+    "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "sequence": 467,
+    "last-price": {
+        "eth": 0,
+        "gen": 0
+    },
+    "state": "none",
+    "data": [
+        {
+            "description": "This is an example #1",
+            "name": "NFT Example #1",
+            "attributes": [
+                {
+                    "trait_type": "color",
+                    "value": "red"
+                },
+                {
+                    "trait_type": "reveal",
+                    "value": "1654677698"
+                }
+            ],
+            "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+            "animation_url": "",
+            "background_color": "",
+            "youtube_url": "",
+            "external_url": ""
+        }
+    ]
+}
+```
+
+<!-- marketplace -->
+
