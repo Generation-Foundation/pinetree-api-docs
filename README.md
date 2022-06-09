@@ -175,7 +175,7 @@ Success 200
     "message": "success",
     "project": "NFT Craft",
     "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "sequence": 467,
+    "token-id": 467,
     "on-sale": false,
     "data": [
         {
@@ -205,11 +205,11 @@ Success 200
 
 | Field | Type | Description |
 |-------|------|----------------|
-| tokenId | number | NFT sequence number |
+| tokenId | number | NFT token id |
 
 `GET`
 ```
-https://api.pinetree.space/project/:projectName/nft/sequence/:tokenId
+https://api.pinetree.space/project/:projectName/nft/token-id/:tokenId
 ```
 
 Success 200
@@ -388,3 +388,4 @@ Success 200
     "escrow-address": "0x97e99c73ddf2778dcc8b7b4e8cec8937a46314a8"
 }
 ```
+
