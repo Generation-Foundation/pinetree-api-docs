@@ -176,11 +176,7 @@ Success 200
     "project": "NFT Craft",
     "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
     "sequence": 467,
-    "last-price": {
-        "eth": 0,
-        "gen": 0
-    },
-    "state": "none",
+    "on-sale": false,
     "data": [
         {
             "description": "This is an example #1",
@@ -205,15 +201,15 @@ Success 200
 }
 ```
 
-## NFT | sequence
+## NFT | token-id
 
 | Field | Type | Description |
 |-------|------|----------------|
-| sequenceNum | number | NFT sequence number |
+| tokenId | number | NFT sequence number |
 
 `GET`
 ```
-https://api.pinetree.space/project/:projectName/nft/sequence/:sequenceNum
+https://api.pinetree.space/project/:projectName/nft/sequence/:tokenId
 ```
 
 Success 200
@@ -221,12 +217,8 @@ Success 200
 {
     "project": "NFT Craft",
     "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "sequence": 467,
-    "last-price": {
-        "eth": 0,
-        "gen": 0
-    },
-    "state": "none",
+    "token-id": 467,
+    "on-sale": false,
     "data": [
         {
             "description": "This is an example #1",
@@ -251,5 +243,148 @@ Success 200
 }
 ```
 
-<!-- marketplace -->
+## Marketplace | order
 
+`GET`
+```
+https://api.pinetree.space/marketplace/order?limit=10&order-by=created-date&order-direction=desc
+```
+
+Success 200
+```json
+{
+    "orders": [
+        {
+            "order-id": 52,
+            "payment-token-symbol": "gen",
+            "maker": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+            "taker": null,
+            "submited-at": 1654752367,
+            "order-price": 742352000000000000000000,
+            "maker-fee": 0.025,
+            "taker-fee": 0,
+            "detail": {
+                "project": "NFT Craft",
+                "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                "token-id": 467,
+                "on-sale": true,
+                "data": [
+                    {
+                        "description": "This is an example #1",
+                        "name": "NFT Example #1",
+                        "attributes": [
+                            {
+                                "trait_type": "color",
+                                "value": "red"
+                            },
+                            {
+                                "trait_type": "reveal",
+                                "value": "1654677698"
+                            }
+                        ],
+                        "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+                        "animation_url": "",
+                        "background_color": "",
+                        "youtube_url": "",
+                        "external_url": ""
+                    }
+                ]
+            }
+        }
+    ]
+}
+```
+
+## Marketplace | order id
+
+| Field | Type | Description |
+|-------|------|----------------|
+| orderId | number | NFT order id on marketplace |
+
+`GET`
+```
+https://api.pinetree.space/marketplace/order/:orderId
+```
+
+Success 200
+```json
+{
+    "order-id": 52,
+    "payment-token-symbol": "gen",
+    "maker": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "taker": null,
+    "submited-at": 1654752367,
+    "order-price": 742352000000000000000000,
+    "maker-fee": 0.025,
+    "taker-fee": 0,
+    "detail": {
+        "project": "NFT Craft",
+        "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "token-id": 467,
+        "on-sale": true,
+        "data": [
+            {
+                "description": "This is an example #1",
+                "name": "NFT Example #1",
+                "attributes": [
+                    {
+                        "trait_type": "color",
+                        "value": "red"
+                    },
+                    {
+                        "trait_type": "reveal",
+                        "value": "1654677698"
+                    }
+                ],
+                "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+                "animation_url": "",
+                "background_color": "",
+                "youtube_url": "",
+                "external_url": ""
+            }
+        ]
+    }
+}
+```
+
+## Marketplace | order-open
+
+`POST`
+```
+https://api.pinetree.space/marketplace/order/open
+```
+
+Request Json Body
+```json
+{
+    "project": "NFT Craft",
+    "token-id": 468,
+    "payment-token-symbol": "gen",
+    "order-price": 1500000000000000000
+}
+```
+
+Success 200
+```json
+{
+    "message": "success",
+    "order-id": 53
+}
+```
+
+## Marketplace | buy
+
+`POST`
+```
+https://api.pinetree.space/marketplace/order/:orderId/buy
+```
+
+Success 200
+```json
+{
+    "message": "success",
+    "order-id": 53,
+    "escrow-id": 24,
+    "escrow-address": "0x97e99c73ddf2778dcc8b7b4e8cec8937a46314a8"
+}
+```
