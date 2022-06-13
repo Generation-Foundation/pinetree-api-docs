@@ -1,4 +1,4 @@
-# Pinetree API
+# Pinetree API v0.1.0
 
 ## Test | Ping
 
