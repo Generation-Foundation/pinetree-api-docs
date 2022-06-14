@@ -61,7 +61,7 @@ https://api.pinetree.space/wallet/token/:tokenAddress/balance
 Success 200
 ```json
 {
-    "token-address": "0x179b734d0291fa9e3a4728c7c27866ee25ccc3e0",
+    "token_address": "0x179b734d0291fa9e3a4728c7c27866ee25ccc3e0",
     "symbol": "GEN",
     "decimal": 18,
     "balance": 31124359812577
@@ -72,7 +72,7 @@ Success 200
 
 `POST`
 ```
-https://api.pinetree.space/wallet/token/:tokenAddress/internal-token-send
+https://api.pinetree.space/wallet/token/:tokenAddress/internalTokenSend
 ```
 
 Request Json Body
@@ -108,8 +108,8 @@ Success 200
     "message": "success",
     "project": "NFT Craft",
     "owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
-    "gen-deposit": 0,
-    "nft-total": 0
+    "gen_deposit": 0,
+    "nft_total": 0
 }
 ```
 
@@ -125,8 +125,8 @@ Success 200
 {
     "project": "NFT Craft",
     "project-owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
-    "gen-deposit": 0,
-    "nft-total": 0
+    "gen_deposit": 0,
+    "nft_total": 0
 }
 ```
 
@@ -175,8 +175,13 @@ Success 200
     "message": "success",
     "project": "NFT Craft",
     "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "token-id": 467,
-    "on-sale": false,
+    "token_id": 467,
+    "on_sale": false,
+    "chain": {
+        "on_chain": false,
+        "chain_name": "pinetree",
+        "token_id_on_chain": 467
+    },
     "data": [
         {
             "description": "This is an example #1",
@@ -201,7 +206,7 @@ Success 200
 }
 ```
 
-## NFT | token-id
+## NFT | tokenId
 
 | Field | Type | Description |
 |-------|------|----------------|
@@ -209,16 +214,21 @@ Success 200
 
 `GET`
 ```
-https://api.pinetree.space/project/:projectName/nft/token-id/:tokenId
+https://api.pinetree.space/project/:projectName/nft/tokenId/:tokenId
 ```
 
 Success 200
 ```json
 {
     "project": "NFT Craft",
-    "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "token-id": 467,
-    "on-sale": false,
+    "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+    "token_id": 467,
+    "on_sale": false,
+    "chain": {
+        "on_chain": false,
+        "chain_name": "pinetree",
+        "token_id_on_chain": 467
+    },
     "data": [
         {
             "description": "This is an example #1",
@@ -247,7 +257,7 @@ Success 200
 
 `GET`
 ```
-https://api.pinetree.space/marketplace/order?limit=10&order-by=created-date&order-direction=desc
+https://api.pinetree.space/marketplace/order?limit=10&orderBy=createdDate&orderDirection=desc
 ```
 
 Success 200
@@ -255,19 +265,24 @@ Success 200
 {
     "orders": [
         {
-            "order-id": 52,
-            "payment-token-symbol": "gen",
+            "order_id": 52,
+            "payment_token_symbol": "gen",
             "maker": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
             "taker": null,
-            "submited-at": 1654752367,
-            "order-price": 742352000000000000000000,
-            "maker-fee": 0.025,
-            "taker-fee": 0,
+            "submited_at": 1654752367,
+            "order_price": 742352000000000000000000,
+            "maker_fee": 0.025,
+            "taker_fee": 0,
             "detail": {
                 "project": "NFT Craft",
-                "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-                "token-id": 467,
-                "on-sale": true,
+                "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+                "token_id": 467,
+                "on_sale": true,
+                "chain": {
+                    "on_chain": false,
+                    "chain_name": "pinetree",
+                    "token_id_on_chain": 467
+                },
                 "data": [
                     {
                         "description": "This is an example #1",
@@ -309,19 +324,24 @@ https://api.pinetree.space/marketplace/order/:orderId
 Success 200
 ```json
 {
-    "order-id": 52,
-    "payment-token-symbol": "gen",
+    "order_id": 52,
+    "payment_token_symbol": "gen",
     "maker": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
     "taker": null,
-    "submited-at": 1654752367,
-    "order-price": 742352000000000000000000,
-    "maker-fee": 0.025,
-    "taker-fee": 0,
+    "submited_at": 1654752367,
+    "order_price": 742352000000000000000000,
+    "maker_fee": 0.025,
+    "taker_fee": 0,
     "detail": {
         "project": "NFT Craft",
-        "nft-owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-        "token-id": 467,
-        "on-sale": true,
+        "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+        "token_id": 467,
+        "on_sale": true,
+        "chain": {
+            "on_chain": false,
+            "chain_name": "pinetree",
+            "token_id_on_chain": 467
+        },
         "data": [
             {
                 "description": "This is an example #1",
@@ -358,9 +378,9 @@ Request Json Body
 ```json
 {
     "project": "NFT Craft",
-    "token-id": 468,
-    "payment-token-symbol": "gen",
-    "order-price": 1500000000000000000
+    "token_id": 468,
+    "payment_token_symbol": "gen",
+    "order_price": 1500000000000000000
 }
 ```
 
@@ -368,7 +388,7 @@ Success 200
 ```json
 {
     "message": "success",
-    "order-id": 53
+    "order_id": 53
 }
 ```
 
@@ -383,9 +403,9 @@ Success 200
 ```json
 {
     "message": "success",
-    "order-id": 53,
-    "escrow-id": 24,
-    "escrow-address": "0x97e99c73ddf2778dcc8b7b4e8cec8937a46314a8"
+    "order_id": 53,
+    "escrow_id": 24,
+    "escrow_address": "0x97e99c73ddf2778dcc8b7b4e8cec8937a46314a8"
 }
 ```
 
