@@ -22,13 +22,13 @@ Success 200
 
 `GET`
 ```
-https://api.pinetree.space/:user/nonce
+https://api.pinetree.space/user/:user/nonce
 ```
 
 Success 200
 ```json
 {
-    "nonce": "2cf05d94db"
+    "nonce": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D_1655271907339"
 }
 ```
 
@@ -36,13 +36,13 @@ Success 200
 
 `POST`
 ```
-https://api.pinetree.space/:user/signature
+https://api.pinetree.space/user/:user/signature
 ```
 
 Success 200
 ```json
 {
-    "user": "0xfd18178e6a2bd20c3943f26f7aa03628003b5c84",
+    "user": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
     "token": "exJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0eXBlIjoidXNlciIsImFjY291bnQiOiJiZW5AYmFvYmFicGFydG5lcnMuaW8iLCJpYXQiOjE2NTQxNTg4MTMsImV4cOI6MTY1NDI0NTIxMywiaXNzIjoiQmFvYmFiIFBhcnRuZXJzIn0.F5rAb_JGhDiq5z8ZnpDMw9Gtf8V_-DsrTqM8j5La7AB"
 }
 ```
