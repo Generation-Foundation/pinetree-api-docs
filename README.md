@@ -34,9 +34,13 @@ Success 200
 
 ## User | signature (Authentication)
 
+| Field | Type | Description |
+|-------|------|----------------|
+| signature | string | Signature is a hex string signed by web3 sign method. |
+
 `POST`
 ```
-https://api.pinetree.space/user/:user/signature
+https://api.pinetree.space/user/:user/signature/:signature
 ```
 
 Success 200
