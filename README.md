@@ -54,6 +54,8 @@ Success 200
 
 ## Wallet | Balance
 
+- Required Auth Token
+
 | Field | Type | Description |
 |-------|------|----------------|
 | tokenAddress | string | ERC20 contract address. If you input 'ethereum', it will return ETH balance. |
@@ -73,30 +75,9 @@ Success 200
 }
 ```
 
-## ~~Wallet | Internal token send~~
-
-`POST`
-```
-https://api.pinetree.space/wallet/token/:tokenAddress/internalTokenSend
-```
-
-Request Json Body
-```json
-{
-    "from": "0xfd18178e6a2bd20c3943f26f7aa03628003b5c84",
-    "to": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
-    "amount": 7261351355566
-}
-```
-
-Success 200
-```json
-{
-    "message": "success"
-}
-```
-
 ## Project | create
+
+- Required Auth Token
 
 | Field | Type | Description |
 |-------|------|----------------|
@@ -136,6 +117,8 @@ Success 200
 ```
 
 ## NFT | mint
+
+- Required Auth Token
 
 | Field | Type | Description |
 |-------|------|----------------|
@@ -374,6 +357,8 @@ Success 200
 
 ## Marketplace | order-open
 
+- Required Auth Token
+
 `POST`
 ```
 https://api.pinetree.space/marketplace/order/open
@@ -398,6 +383,8 @@ Success 200
 ```
 
 ## Marketplace | buy
+
+- Required Auth Token
 
 `POST`
 ```
