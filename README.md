@@ -66,10 +66,10 @@ https://api.pinetree.space/wallet/token/:tokenAddress/balance
 Success 200
 ```json
 {
-    "token_address": "0x179b734d0291fa9e3a4728c7c27866ee25ccc3e0",
-    "symbol": "GEN",
-    "decimal": 18,
-    "balance": 31124359812577
+	"name": "GEN",
+	"symbol": "GEN",
+	"decimals": "18",
+	"balance": "31124359812577"
 }
 ```
 
