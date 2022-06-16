@@ -112,7 +112,8 @@ Success 200
     "project": "NFT Craft",
     "project_owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
     "gen_deposit": 0,
-    "nft_total": 0
+    "nft_total": 0,
+    "created_timestamp": 1655371419
 }
 ```
 
