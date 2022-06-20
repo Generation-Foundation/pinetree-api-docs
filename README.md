@@ -93,7 +93,7 @@ Success 200
 {
     "message": "success",
     "project": "NFT Craft",
-    "owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
+    "project_owner": "0xedec843ee5ecdbf54ae7f25cf466d944375860e4",
     "gen_deposit": 0,
     "nft_total": 0
 }
