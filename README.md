@@ -170,28 +170,7 @@ Success 200
         "on_chain": false,
         "chain_name": "pinetree",
         "token_id_on_chain": 467
-    },
-    "data": [
-        {
-            "description": "This is an example #1",
-            "name": "NFT Example #1",
-            "attributes": [
-                {
-                    "trait_type": "color",
-                    "value": "red"
-                },
-                {
-                    "trait_type": "reveal",
-                    "value": "1654677698"
-                }
-            ],
-            "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
-            "animation_url": "",
-            "background_color": "",
-            "youtube_url": "",
-            "external_url": ""
-        }
-    ]
+    }
 }
 ```
 
