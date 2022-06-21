@@ -71,7 +71,7 @@ Success 200
 	"name": "GEN",
 	"symbol": "GEN",
 	"decimals": "18",
-	"balance": "31124359812577"
+	"balance": "1000.000000000000000000"
 }
 ```
 
