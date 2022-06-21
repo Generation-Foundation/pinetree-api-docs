@@ -134,6 +134,7 @@ https://api.pinetree.space/project/:projectName/nft/mint/receiver/:receiver
 Request Json Body
 ```json
 {
+	"royalty_fee": 0.025,
     "data": [
         {
             "description": "This is an example #1",
@@ -165,6 +166,7 @@ Success 200
     "project": "NFT Craft",
     "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
     "token_id": 467,
+	"royalty_fee": 0.025,
     "on_sale": false,
     "chain": {
         "on_chain": false,
@@ -191,6 +193,7 @@ Success 200
     "project": "NFT Craft",
     "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
     "token_id": 467,
+	"royalty_fee": 0.025,
     "on_sale": false,
     "chain": {
         "on_chain": false,
@@ -241,6 +244,7 @@ Success 200
 			"order_price": 15.54205,
 			"maker_fee": 0.025,
 			"taker_fee": 0,
+			"royalty_fee": 0.025,
 			"project": "NFT Craft",
 			"token_id": 1,
 			"data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Example #1\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
@@ -321,7 +325,7 @@ Request Json Body
     "project": "NFT Craft",
     "token_id": 468,
     "payment_token_symbol": "gen",
-    "order_price": 1500000000000000000
+    "order_price": 150
 }
 ```
 
