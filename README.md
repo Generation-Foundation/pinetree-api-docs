@@ -234,22 +234,50 @@ https://api.pinetree.space/marketplace/order?limit=10&orderBy=createdDate&orderD
 Success 200
 ```json
 {
-	"orders": [
-		{
-			"order_id": 467,
-			"payment_token_symbol": "gen",
-			"maker": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
-			"taker": "",
-			"submitted_at": 1655792303,
-			"order_price": 15.54205,
-			"maker_fee": 0.025,
-			"taker_fee": 0,
-			"royalty_fee": 0.025,
-			"project": "NFT Craft",
-			"token_id": 1,
-			"data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Example #1\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
-		}
-	]
+  "orders": [
+    {
+      "order_id": 16,
+      "project": "NFT Craft333",
+      "token_id": 5,
+      "payment_token_symbol": "gen",
+      "maker": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+      "taker": "",
+      "submitted_at": 1655802215,
+      "order_price": 350,
+      "maker_fee": 0.025,
+      "taker_fee": 0,
+      "royalty_fee": 0.025,
+      "data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Craft 333333333\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
+    },
+    {
+      "order_id": 12,
+      "project": "NFT Craft333",
+      "token_id": 1,
+      "payment_token_symbol": "gen",
+      "maker": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+      "taker": "",
+      "submitted_at": 1655797156,
+      "order_price": 250,
+      "maker_fee": 0.025,
+      "taker_fee": 0,
+      "royalty_fee": 0,
+      "data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Craft 333333333\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
+    },
+    {
+      "order_id": 11,
+      "project": "NFT Craft Test",
+      "token_id": 1,
+      "payment_token_symbol": "gen",
+      "maker": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+      "taker": "",
+      "submitted_at": 1655792303,
+      "order_price": 15.54205,
+      "maker_fee": 0.025,
+      "taker_fee": 0,
+      "royalty_fee": 0,
+      "data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Example #1\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
+    }
+  ]
 }
 ```
 
@@ -267,46 +295,18 @@ https://api.pinetree.space/marketplace/order/:orderId
 Success 200
 ```json
 {
-    "order_id": 52,
-    "payment_token_symbol": "gen",
-    "maker": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "taker": null,
-    "submited_at": 1654752367,
-    "order_price": 742352000000000000000000,
-    "maker_fee": 0.025,
-    "taker_fee": 0,
-    "detail": {
-        "project": "NFT Craft",
-        "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-        "token_id": 467,
-        "on_sale": true,
-        "chain": {
-            "on_chain": false,
-            "chain_name": "pinetree",
-            "token_id_on_chain": 467
-        },
-        "data": [
-            {
-                "description": "This is an example #1",
-                "name": "NFT Example #1",
-                "attributes": [
-                    {
-                        "trait_type": "color",
-                        "value": "red"
-                    },
-                    {
-                        "trait_type": "reveal",
-                        "value": "1654677698"
-                    }
-                ],
-                "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
-                "animation_url": "",
-                "background_color": "",
-                "youtube_url": "",
-                "external_url": ""
-            }
-        ]
-    }
+  "order_id": 16,
+  "project": "NFT Craft333",
+  "token_id": 5,
+  "payment_token_symbol": "gen",
+  "maker": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+  "taker": "",
+  "submitted_at": 1655802215,
+  "order_price": 350,
+  "maker_fee": 0.025,
+  "taker_fee": 0,
+  "royalty_fee": 0.025,
+  "data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Craft 333333333\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
 }
 ```
 
