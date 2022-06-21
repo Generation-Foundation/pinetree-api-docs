@@ -134,28 +134,28 @@ https://api.pinetree.space/project/:projectName/nft/mint/receiver/:receiver
 Request Json Body
 ```json
 {
-	"royalty_fee": 0.025,
-    "data": [
+  "royalty_fee": 0.025,
+  "data": [
+    {
+      "description": "This is an example #1",
+      "name": "NFT Example #1",
+      "attributes": [
         {
-            "description": "This is an example #1",
-            "name": "NFT Example #1",
-            "attributes": [
-                {
-                    "trait_type": "color",
-                    "value": "red"
-                },
-                {
-                    "trait_type": "reveal",
-                    "value": "1654677698"
-                }
-            ],
-            "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
-            "animation_url": "",
-            "background_color": "",
-            "youtube_url": "",
-            "external_url": ""
+          "trait_type": "color",
+          "value": "red"
+        },
+        {
+          "trait_type": "reveal",
+          "value": "1654677698"
         }
-    ]
+      ],
+      "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+      "animation_url": "",
+      "background_color": "",
+      "youtube_url": "",
+      "external_url": ""
+    }
+  ]
 }
 ```
 
