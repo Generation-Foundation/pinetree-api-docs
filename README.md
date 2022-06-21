@@ -162,17 +162,17 @@ Request Json Body
 Success 200
 ```json
 {
-    "message": "success",
-    "project": "NFT Craft",
-    "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "token_id": 467,
-	"royalty_fee": 0.025,
-    "on_sale": false,
-    "chain": {
-        "on_chain": false,
-        "chain_name": "pinetree",
-        "token_id_on_chain": 467
-    }
+  "message": "success",
+  "project": "NFT Craft",
+  "receiver": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+  "token_id": 467,
+  "royalty_fee": 0.025,
+  "on_sale": false,
+  "chain": {
+    "on_chain": false,
+    "chain_name": "pinetree",
+    "token_id_on_chain": 467
+  }
 }
 ```
 
@@ -190,37 +190,37 @@ https://api.pinetree.space/project/:projectName/nft/tokenId/:tokenId
 Success 200
 ```json
 {
-    "project": "NFT Craft",
-    "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
-    "token_id": 467,
-	"royalty_fee": 0.025,
-    "on_sale": false,
-    "chain": {
-        "on_chain": false,
-        "chain_name": "pinetree",
-        "token_id_on_chain": 467
-    },
-    "data": [
+  "project": "NFT Craft",
+  "nft_owner": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48",
+  "token_id": 467,
+  "royalty_fee": 0.025,
+  "on_sale": false,
+  "chain": {
+    "on_chain": false,
+    "chain_name": "pinetree",
+    "token_id_on_chain": 467
+  },
+  "data": [
+    {
+      "description": "This is an example #1",
+      "name": "NFT Example #1",
+      "attributes": [
         {
-            "description": "This is an example #1",
-            "name": "NFT Example #1",
-            "attributes": [
-                {
-                    "trait_type": "color",
-                    "value": "red"
-                },
-                {
-                    "trait_type": "reveal",
-                    "value": "1654677698"
-                }
-            ],
-            "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
-            "animation_url": "",
-            "background_color": "",
-            "youtube_url": "",
-            "external_url": ""
+          "trait_type": "color",
+          "value": "red"
+        },
+        {
+          "trait_type": "reveal",
+          "value": "1654677698"
         }
-    ]
+      ],
+      "image": "https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg",
+      "animation_url": "",
+      "background_color": "",
+      "youtube_url": "",
+      "external_url": ""
+    }
+  ]
 }
 ```
 
