@@ -362,6 +362,31 @@ Success 200
 }
 ```
 
+## Marketplace | order-cancel
+
+- Required Auth Token
+
+`POST`
+```
+https://api.pinetree.space/marketplace/order/cancel
+```
+
+Request Json Body
+```json
+{
+    "project": "NFT Craft",
+    "token_id": 468
+}
+```
+
+Success 200
+```json
+{
+    "message": "success",
+    "order_id": 53
+}
+```
+
 ## Marketplace | buy
 
 - Required Auth Token
