@@ -75,7 +75,7 @@ Success 200
 }
 ```
 
-## Wallet | NFT
+## Wallet | my NFT
 
 - Required Auth Token
 
