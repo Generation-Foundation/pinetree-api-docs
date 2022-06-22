@@ -75,6 +75,43 @@ Success 200
 }
 ```
 
+## Wallet | NFT
+
+- Required Auth Token
+
+`GET`
+```
+https://api.pinetree.space/wallet/nft
+```
+
+Success 200
+```json
+[
+  {
+    "id": 11,
+    "project": "NFT Craft Test",
+    "nft_owner": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+    "token_id": 1,
+    "on_sale": "1",
+    "on_chain": "0",
+    "chain_name": "pinetree",
+    "token_id_on_chain": "",
+    "data": "[{\"description\":\"This is an example #1\",\"name\":\"NFT Example #1\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
+  },
+  {
+    "id": 12,
+    "project": "NFT Craft333",
+    "nft_owner": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+    "token_id": 1,
+    "on_sale": "1",
+    "on_chain": "0",
+    "chain_name": "pinetree",
+    "token_id_on_chain": "",
+    "data": "[{\"description\":\"This is an example #2\",\"name\":\"NFT Craft 333333333\",\"attributes\":[{\"trait_type\":\"color\",\"value\":\"red\"},{\"trait_type\":\"reveal\",\"value\":\"1654677698\"}],\"image\":\"https://ipfs.io/ipfs/QmVsy5Uq8CuA7GPoyJFpsNQoDiC1csdJVEJU7SoveUAbzg\",\"animation_url\":\"\",\"background_color\":\"\",\"youtube_url\":\"\",\"external_url\":\"\"}]"
+  }
+]
+```
+
 ## Project | create
 
 - Required Auth Token
