@@ -155,6 +155,39 @@ Success 200
 }
 ```
 
+## Project | project
+
+`GET`
+```
+https://api.pinetree.space/project/latest
+```
+
+Success 200
+```json
+[
+  {
+    "account": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+    "project": "NFT Craft Test",
+    "created_timestamp": 1655371419
+  },
+  {
+    "account": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+    "project": "NFT Craft222",
+    "created_timestamp": 1655796848
+  },
+  {
+    "account": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+    "project": "NFT Craft333",
+    "created_timestamp": 1655796870
+  },
+  {
+    "account": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+    "project": "testname",
+    "created_timestamp": 1655948489
+  }
+]
+```
+
 ## NFT | mint
 
 - Required Auth Token
