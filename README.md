@@ -28,7 +28,7 @@ https://api.pinetree.space/user/:user/nonce
 Success 200
 ```json
 {
-    "nonce": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D_1655271907339"
+    "nonce": "I want to login on Pinetree at Thu Jun 23 2022 04:43:47 GMT+0000 (Coordinated Universal Time) 36cb"
 }
 ```
 
