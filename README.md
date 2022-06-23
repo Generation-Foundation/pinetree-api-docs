@@ -33,6 +33,7 @@ Success 200
 ```
 
 ## User | signature (Authentication)
+- How to get the signature value?(https://blog.devgenius.io/authenticating-users-to-your-web-app-using-metamask-and-nodejs-e920e45e358)
 
 | Field | Type | Description |
 |-------|------|----------------|
