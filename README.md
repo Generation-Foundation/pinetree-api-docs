@@ -155,7 +155,7 @@ Success 200
 }
 ```
 
-## Project | project
+## Project | latest projects
 
 `GET`
 ```
