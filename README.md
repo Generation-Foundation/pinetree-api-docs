@@ -59,7 +59,7 @@ Success 200
 
 | Field | Type | Description |
 |-------|------|----------------|
-| tokenAddress | string | ERC20 contract address. If you input 'eth', it will return ETH balance. |
+| tokenAddress | string | ERC20 contract address. If you input 'eth' or 'bgen', it will return ETH or bgen balance. |
 
 `GET`
 ```
