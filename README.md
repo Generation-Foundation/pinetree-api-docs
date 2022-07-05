@@ -447,7 +447,6 @@ Success 200
 {
     "message": "success",
     "order_id": 53,
-    "escrow_id": 24,
     "escrow_address": "0x97e99c73ddf2778dcc8b7b4e8cec8937a46314a8"
 }
 ```
