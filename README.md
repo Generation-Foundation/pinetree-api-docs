@@ -445,9 +445,15 @@ https://api.pinetree.space/marketplace/order/:orderId/buy
 Success 200
 ```json
 {
-    "message": "success",
-    "order_id": 53,
-    "escrow_address": "0x97e99c73ddf2778dcc8b7b4e8cec8937a46314a8"
+	"message": "success",
+	"buyer_account": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+	"order_id": 13,
+	"payment_token_symbol": "eth",
+	"order_price": 0.2,
+	"project_owner": null,
+	"royalty_fee": 0.025,
+	"nft_owner": "0xaDef029F4f8BE4F2d03F1f758E95D76F8DF48e1D",
+	"hmac": "2ea2d87bf6ee240636742aab024dac99da21f8b6b75dd551752c9366155c2472"
 }
 ```
 
